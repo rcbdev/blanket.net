@@ -23,3 +23,8 @@ The generated URL can also be retrieved via the `URL` property.
 * Support for custom headers (both global under the `Wrapper.Wrap` call or locally under the `Get` call)
 * Support for posting data to an API
 * Support for oData query construction
+* Documentation
+
+## Contributions
+
+Contributions are greatly welcomed. This is the first time I've created something based on the dynamic behaviour in C#, so any improvements around that would be appreciated. Additionally, unit tests and documentation are two areas where help would be brilliant.
