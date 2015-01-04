@@ -24,11 +24,7 @@ The generated URL can also be retrieved via the `URL` property.
 
 * Support for converting the result of the API call to a given type
 * Support for custom extensions to the end of the URL (e.g. if ".json" is required)
-<<<<<<< HEAD
-=======
-* Support for custom headers (both global under the `Wrapper.Wrap` call or locally under the `Get` call)
 * Support for custom parameters
->>>>>>> origin/master
 * Support for posting data to an API
 * Support for oData query construction
 * Documentation
