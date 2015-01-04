@@ -1,4 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Linq;
 
 namespace Blanket.Tests
 {
@@ -45,6 +46,14 @@ namespace Blanket.Tests
             var wrapper = Wrapper.Wrap("https://api.github.com");
 
             Assert.AreEqual("https://api.github.com/Users/RCBDev", wrapper.Users("RCBDev").Url);
+        }
+
+        [TestMethod]
+        public void CanAddGlobalHeaders()
+        {
+            var wrapper = Wrapper.Wrap("https://api.github.com", new { auth_token = "My Authorisation" });
+
+            Assert.IsTrue(((Wrapper)wrapper).Headers.Any(kvp => kvp.Key == "auth_token" && kvp.Value == "My Authorisation"));
         }
     }
 }
